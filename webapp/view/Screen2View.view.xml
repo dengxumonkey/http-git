@@ -10,11 +10,11 @@
 				            <Label text="{i18n>style}" width="100%" id="label0"/>
 				        </items>
 				    </VBox>
-				    <List id="poList" modeAnimationOn="false" items="{path:'/eanSet',parameters:{select:'EAN,Colour,Netprice,Season,Size,Currency'}}">
+				    <List id="poList" modeAnimationOn="false" items="{path:'/eanSet',parameters:{select:'EAN,Colour,Netprice,Season,Currency,Size'}}">
 					<ObjectListItem type="Active" title="{EAN}" number="{Netprice}" numberUnit="{Currency}">
 				        <attributes>
-				            <ObjectAttribute text="{Colour}" id="color"/>
-				            <ObjectAttribute text="{Size}" id="size"/>
+				            <ObjectAttribute text="Color: {Colour}" id="color"/>
+				            <ObjectAttribute text="Size: {Size}" id="size"/>
 				        </attributes>
 				        <!--
 				        <firstStatus>
@@ -30,7 +30,7 @@
 			<footer>
 			    <Bar class="sapContrast sapContrastPlus" id="bar0">
 			        <contentMiddle>
-			            <Button text="{i18n>printList}" width="100px" id="button0"/>
+			            <Button text="{i18n>printList}" width="100px" id="button0" type="Emphasized"/>
 			        </contentMiddle>
 			    </Bar>
 			</footer>
