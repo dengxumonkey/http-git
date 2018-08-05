@@ -2,8 +2,7 @@
 	<App>
 		<pages>
 			
-			<Page xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" 
-			title="{i18n>title}" showNavButton="true" navButtonPress="action" action:wiring="\{'navButtonPress':\{'navigation':\{'routeName':'Screen1View'\}\}\}">
+			<Page xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" title="{i18n>title}" showNavButton="true" navButtonPress="action" action:wiring="\{'navButtonPress':\{'navigation':\{'routeName':'Screen1View'\}\}\}">
 				<content>
 					<PullToRefresh id="refresh1"/>
 					<VBox width="100%" direction="Column" id="vbox0">
@@ -11,7 +10,7 @@
 				            <Label text="{i18n>style}" width="100%" id="label0"/>
 				        </items>
 				    </VBox>
-				    <List id="poList" modeAnimationOn="false" items="{path:'/EANS',parameters:{select:'ID,Style,Description,EAN,Currency,Netprice,Season,Division,Colour,Size'},sorter:[{path:'EAN',descending:false}]}">
+				    <List id="poList" modeAnimationOn="false" items="{path:'/eanSet',parameters:{select:'EAN,Colour,Netprice,Season,Size,Currency'}}">
 					<ObjectListItem type="Active" title="{EAN}" number="{Netprice}" numberUnit="{Currency}">
 				        <attributes>
 				            <ObjectAttribute text="{Colour}" id="color"/>
