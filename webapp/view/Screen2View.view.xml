@@ -13,8 +13,8 @@
 				    <List id="poList" modeAnimationOn="false" items="{path:'/eanSet',parameters:{select:'EAN,Colour,Netprice,Season,Currency,Size'}}">
 					<ObjectListItem type="Active" title="{EAN}" number="{Netprice}" numberUnit="{Currency}">
 				        <attributes>
-				            <ObjectAttribute text="Color: {Colour}" id="color"/>
-				            <ObjectAttribute text="Size: {Size}" id="size"/>
+				            <ObjectAttribute text="{i18n>color}: {Colour}" id="color"/>
+				            <ObjectAttribute text="{i18n>size}: {Size}" id="size"/>
 				        </attributes>
 				        <!--
 				        <firstStatus>
